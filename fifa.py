@@ -24,7 +24,7 @@ st.markdown('<h1 class="main-title">⚽ FIFA Player Analysis Dashboard</h1>', un
 # Load Dataset
 @st.cache_data
 def load_data():
-    return pd.read_csv(r"C:\Users\ADMIN\Desktop\DATA SCIENCE NOTES\NOVEMBER MONTH\27TH NOV\25th, 26th- Advanced EDA project\25th, 26th- Advanced EDA project\Seaborn - SPORT\FIFA.csv")     # change path if needed
+    return pd.read_csv("FIFA.csv")     # change path if needed
 
 df = load_data()
 
@@ -147,3 +147,4 @@ with tab_conclusion:
 - Recommend similar players using ML
 - Performance forecasting model
 """)
+
